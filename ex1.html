@@ -25,9 +25,12 @@
                 var age = form["age"].value;
                 var email = form["email"].value;
                 var pwd = form["password"].value;
-           
 
                 var msg = "";
+
+                if (id.length > 10) {
+                    msg += "ID must not contain more than 10 characters\n";
+                }
                 
                 if (msg != "") {
                     alert(msg);
